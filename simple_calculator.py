@@ -15,7 +15,7 @@ def div(num_one, num_two):
 def sq(num_one):
     return math.sqrt(num_one)
 
-def pow(num_one):
+def power(num_one):
     return math.pow(num_one, 2)
 
 operation = (input('Type "Add" or "Sub" or "Multi" or "Div" or "Sq" or "Pow" : ')).upper()
@@ -31,7 +31,7 @@ elif operation == 'SUB':
 elif operation == 'DIV':
     print(div(input_num_one, input_num_two))
 elif operation == 'POW':
-    print(pow(input_num_one))
+    print(power(input_num_one))
 elif operation == 'SQ':
     print(sq(input_num_one))
 else:
