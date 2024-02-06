@@ -29,8 +29,6 @@ operation = int(input(
 6. Power
 Type your choice : '''))
 
-# (input('Type "Add" or "Sub" or "Multi" or "Div" or "Sq" or "Pow" : ')).upper()
-
 input_num_one = int(input('Type the first number : '))
 if operation not in [5, 6]:
     input_num_two = int(input('Type the second number : '))
