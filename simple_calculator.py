@@ -48,6 +48,8 @@ Type your choice : '''))
     else:
         print(multi(input_num_one, input_num_two))
         
-    continue_or_no = input('\nDo you want to continue?')
+    continue_or_no = input('\nDo you want to continue? ')
     if continue_or_no != 'yes':
         break
+
+print('Bye!')
