@@ -21,7 +21,6 @@ def power(num_one):
 while True:
 
     os.system('cls')
-
     operation = input(
 '''1. Add
 2. Sub
@@ -39,7 +38,6 @@ Type your choice : ''')
         input_num_one = int(input('Type the first number : '))
         if operation not in [5, 6]:
             input_num_two = int(input('Type the second number : '))
-
         if operation == 1:
             print(plus(input_num_one, input_num_two))
         elif operation == 2:
@@ -54,7 +52,6 @@ Type your choice : ''')
             print(power(input_num_one))
         else:
             print('Your input is invalid.')
-            
         continue_or_no = input('\nDo you want to continue? ')
         if continue_or_no != 'yes':
             break
