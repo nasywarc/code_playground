@@ -1,25 +1,24 @@
 import math, os
 
 def plus (num_one, num_two):
-    return num_one + num_two
+    print(f'{num_one} + {num_two} = {num_one + num_two}')
 
 def sub (num_one, num_two):
-    return num_one - num_two
+    print(f'{num_one} - {num_two} = {num_one - num_two}')
 
 def multi(num_one, num_two):
-    return num_one * num_two
+    print(f'{num_one} * {num_two} = {num_one * num_two}')
 
 def div(num_one, num_two):
-    return num_one / num_two
+    print(f'{num_one} / {num_two} = {num_one / num_two}')
 
 def sq(num_one):
-    return math.sqrt(num_one)
+    print(f'The square of {num_one} is {math.sqrt(num_one)}')
 
 def power(num_one):
-    return math.pow(num_one, 2)
+    print(f'The power of {num_one} is {math.pow(num_one, 2)}')
 
 while True:
-
     os.system('cls')
     operation = input(
 '''1. Add
@@ -33,27 +32,28 @@ Type your choice : ''')
     try:
         operation = int(operation)
     except:
-        print('\nYour input is invalid.')
+        pass
+        
     if operation in [1, 2, 3, 4, 5, 6]:    
-        input_num_one = int(input('Type the first number : '))
+        input_num_one = int(input('\nType the first number : '))
         if operation not in [5, 6]:
             input_num_two = int(input('Type the second number : '))
         if operation == 1:
-            print(plus(input_num_one, input_num_two))
+            plus(input_num_one, input_num_two)
         elif operation == 2:
-            print(sub(input_num_one, input_num_two))
+            sub(input_num_one, input_num_two)
         elif operation == 3:
-            print(multi(input_num_one, input_num_two))
+            multi(input_num_one, input_num_two)
         elif operation == 4:
-            print(div(input_num_one, input_num_two))
+            div(input_num_one, input_num_two)
         elif operation == 5:
-            print(sq(input_num_one))
-        elif operation == 6:
-            print(power(input_num_one))
+            sq(input_num_one)
         else:
-            print('Your input is invalid.')
-        continue_or_no = input('\nDo you want to continue? ')
-        if continue_or_no != 'yes':
-            break
+            power(input_num_one)
+    else:
+        print('\nYour input is invalid.')
+    continue_or_no = input('\nDo you want to continue? ')
+    if continue_or_no != 'yes':
+        break
 
 print('Bye!')
