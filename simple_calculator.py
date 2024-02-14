@@ -1,5 +1,10 @@
 import math, os
 
+# def calc(num_one, num_two, op):
+#     list = [1, -1]
+#     print(f'{num_one} {}')
+#     print(f'{num_one} {op} {num_two} = {num_one} + {list[op]}*{num_two}')
+
 def plus (num_one, num_two):
     print(f'{num_one} + {num_two} = {num_one + num_two}')
 
@@ -39,7 +44,8 @@ Type your choice : ''')
         if operation not in [5, 6]:
             input_num_two = int(input('Type the second number : '))
         if operation == 1:
-            plus(input_num_one, input_num_two)
+            # calc(input_num_one, input_num_two, 0)
+            pass
         elif operation == 2:
             sub(input_num_one, input_num_two)
         elif operation == 3:
