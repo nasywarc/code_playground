@@ -52,8 +52,8 @@ Type your choice : ''')
             power(input_num_one)
     else:
         print('\nYour input is invalid.')
-    continue_or_no = input('\nDo you want to continue? ')
+    continue_or_no = input('Do you want to continue?\n')
     if continue_or_no != 'yes':
         break
 
-print('Bye!')
+print('Bye!\n')
