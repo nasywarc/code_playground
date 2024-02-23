@@ -2,9 +2,6 @@ import tkinter as tk
 
 window = tk.Tk()
 window.title('Calculator App')
-# window.minsize(width=300, height=400)
-# window.maxsize(width=300, height=400)
-# window.geometry('300x400')
 
 result = tk.Label(text='Hello World', height=4)
 result.grid(row=0, column=0, columnspan=3)
