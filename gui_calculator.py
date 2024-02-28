@@ -37,4 +37,10 @@ nine.grid(row=3, column=2)
 zero = tk.Button(text='0', width=7, height=4, background='#000', foreground='#FFF')
 zero.grid(row=4, column=1)
 
+plus = tk.Button(text='+', width=7, height=4, background='#000', foreground='#FFF')
+plus.grid(row=4, column=0)
+
+minus = tk.Button(text='-', width=7, height=4, background='#000', foreground='#FFF')
+minus.grid(row=4, column=2)
+
 window.mainloop()
