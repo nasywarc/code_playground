@@ -4,8 +4,8 @@ window = tk.Tk()
 window.title('Calculator App')
 window.config(background='#000')
 
-result = tk.Label(text='Result', height=4, background='#000', foreground='#FFF')
-result.grid(row=0, column=0, columnspan=3)
+result = tk.Label(text='RESULT HERE', height=4, background='#000', foreground='#FFF')
+result.grid(row=0, column=0, columnspan=4)
 
 one = tk.Button(text='7', width=7, height=4, background='#000', foreground='#FFF')
 one.grid(row=1, column=0)
@@ -38,9 +38,15 @@ zero = tk.Button(text='0', width=7, height=4, background='#000', foreground='#FF
 zero.grid(row=4, column=1)
 
 plus = tk.Button(text='+', width=7, height=4, background='#000', foreground='#FFF')
-plus.grid(row=4, column=0)
+plus.grid(row=3, column=3)
 
 minus = tk.Button(text='-', width=7, height=4, background='#000', foreground='#FFF')
-minus.grid(row=4, column=2)
+minus.grid(row=2, column=3)
+
+multiply = tk.Button(text='x', width=7, height=4, background='#000', foreground='#FFF')
+multiply.grid(row=1, column=3)
+
+equal = tk.Button(text='=', width=7, height=4, background='#000', foreground='#FFF')
+equal.grid(row=4, column=3)
 
 window.mainloop()
