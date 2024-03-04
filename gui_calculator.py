@@ -4,7 +4,7 @@ window = tk.Tk()
 window.title('Calculator App')
 window.config(background='#000')
 
-result = tk.Label(text='Result', height=4, background='#000', foreground='#FFF')
+result = tk.Label(text='Calculation', height=4, background='#000', foreground='#FFF')
 result.grid(row=0, column=0, columnspan=4)
 
 one = tk.Button(text='7', width=7, height=4, background='#000', foreground='#FFF')
