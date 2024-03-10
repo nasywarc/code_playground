@@ -4,7 +4,7 @@ window = Tk()
 window.title('Calculator App')
 window.config(background='#000')
 
-result = Label(text='Calculation Result', height=4, background='#000', foreground='#FFF')
+result = Label(text='Results will be displayed here', height=4, background='#000', foreground='#FFF')
 result.grid(row=0, column=0, columnspan=4)
 
 one = Button(text='7', width=7, height=4, background='#000', foreground='#FFF')
