@@ -11,7 +11,7 @@ def press(num):
     equation.set(expression)
     
 window = Tk()
-window.title('Calculator GUI')
+window.title('Calculator App')
 window.config(background='#000')
 
 equation = StringVar()
