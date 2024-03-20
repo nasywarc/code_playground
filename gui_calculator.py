@@ -1,7 +1,7 @@
 from tkinter import Label, Button, Tk, Entry
 
 window = Tk()
-window.title('Calculator App')
+window.title('Calculator GUI')
 window.config(background='#000')
 
 result = Label(text='Results will be displayed here', height=4, background='#000', foreground='#FFF')
